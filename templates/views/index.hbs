@@ -1,0 +1,22 @@
+{{>header}}
+        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column text-center">
+            <main role="main" class="inner cover py-5">
+                <h1 class="cover-heading py-3"> {{ title }} Net</h1>
+                <p class="lead pb-3">Explore if there are storms around</p>
+                <div class="input-group md-form form-sm form-2 pl-0">
+                <input id="search" class="form-control my-0 py-1 red-border" type="text" placeholder="Type a place to search ... " aria-label="Search">
+                <div class="input-group-append">
+                    <span class="input-group-text red lighten-3" id="basic-text1"><i id="click" class="fas fa-search text-grey"
+                        aria-hidden="true"></i></span>
+                </div>
+                </div>
+                <div class = "py-3">
+                    <span id = "res"></span>
+                </div>
+            </main>
+            <footer class="mastnote">
+                <p> Created by <a href="#"> {{ name }} </a></p>
+            </footer>
+        </div>
+        
+{{>footer}}
