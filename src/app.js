@@ -30,9 +30,8 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About | Weather Storm',
-        data: 'Started to work on this project very recently'
-    })
+        title: 'About | Weather Storm'
+        })
 })
 
 app.get('/help', (req, res) => {
