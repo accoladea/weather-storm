@@ -12,9 +12,10 @@ const forecast = (latitude, longitude, callback) => {
             return callback('Unable to find location', undefined)
         } 
         console.log(body)
-        const temperature = body.current.temperature
-        const humidity = body.current.humidity
-        const data = 'Temperature outside is ' + temperature + ' and humidity is ' + humidity
+        // const temperature = body.current.temperature
+        // const humidity = body.current.humidity
+        const data = JSON.stringify(body.current)
+
         callback(undefined, data)
     })
 }
